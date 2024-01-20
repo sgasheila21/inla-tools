@@ -83,15 +83,13 @@
                             ).then(() => {
                                 location.reload();
                             });
-                            // You can perform additional actions after successful deletion if needed
                         },
                         error: function(xhr) {
                             Swal.fire(
                                 'Error!',
-                                xhr.responseJSON.failure || 'Failed to delete data.',
+                                'Failed to delete variable.',
                                 'error'
                             );
-                            // Handle errors if deletion fails
                         }
                     });
                 }

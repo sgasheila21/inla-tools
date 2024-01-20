@@ -205,10 +205,10 @@ class DataController extends Controller
 
         try {
             $validator = FacadesValidator::make($request->all(),[
-                'values.*.*' => 'required'
+                'values.*.*' => 'required|numeric'
             ]);
             if($validator->fails()){
-                return redirect()->back()->with('failure', 'All value field must be filled.');
+                return redirect()->back()->with('failure', 'All value field must be filled and must be numeric.');
             }
 
             $inputValues = $request->input('values');
