@@ -56,12 +56,13 @@ class PasswordController extends Controller
     public function showChangePasswordForgot($token)
     {
         $user = User::where('reset_password_token', $token)->where('reset_token_expires_at', '>', now())->first();
-        $email = $user->email;
-
         if(!$user){
-            return redirect()->route('login')->with('error', 'Invalid or expired reset password token. Please request a new link.');
+            return redirect()->route('login')->with('failure', 'Invalid or expired reset password token. Please request a new link.');
         }
-        return view('auth.change-password', compact('email'));
+        else{
+            $email = $user->email;
+            return view('auth.change-password', compact('email'));
+        }
     }
 
     public function showChangePassword()
