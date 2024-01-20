@@ -14,6 +14,55 @@
     analysis results, INLA excels in producing accurate parameter estimates. This application is created to assist you in conducting spatial
     analysis in disconnected areas, particularly in the East Nusa Tenggara Province.
     </p>
+    <div class="px-5 mt-4">
+        <h5>What menus are available in this application?</h5>
+        <ul>
+            <li>
+                Home:<br>
+                The home page of the INLA Tools application displays a map of East Nusa Tenggara Province and explanations related to the application.
+            </li>
+            <li>
+                Data:<br>
+                A page for managing data for spatial analysis using the BYM2 model with the INLA method. By default, one dataset is provided, namely the data related to malaria cases in 2020.
+            </li>
+            <li>
+                Analysis:<br>
+                A page for performing spatial analysis using the BYM2 model with the INLA method on selected data and variables. The analysis results along with explanations of the output will be presented.
+            </li>
+            <li>
+                Variable:<br>
+                A page for managing the variables used in the data.
+            </li>
+        </ul>
+        
+        <h5>How to analyze the data:</h5>
+        <ul>
+            <li>
+                Input data in the data menu if you don't want to use the default data.
+            </li>
+            <li>
+                Click on the analysis menu.
+            </li>
+            <li>
+                Select the data year period.
+            </li>
+            <li> 
+                Choose the title of the data available for the selected period.
+            </li>
+            <li>
+                Select the dependent variable to be used from the selected data.
+            </li>
+            <li>
+                Select the independent variable to be used from the selected data.
+            </li>
+            <li>
+                Click the submit button.
+            </li>
+            <li>
+                After the process is complete, the analysis results will be displayed, including Moran's I test, spatial modeling, expected values, and the distribution map of the selected dependent variable.
+            </li>
+        </ul>
+    </div>
 </div>
 
 <!-- EXTRA CSS -->
