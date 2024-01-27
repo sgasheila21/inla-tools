@@ -62,7 +62,7 @@
             <div class="mt-1">
                 <b>Note:</b><br>
                 H<sub>0</sub>: λ=0 (no significant spatial pattern) <br>
-                H<sub>0</sub>: λ≠0 (significant spatial pattern) <br><br>
+                H<sub>1</sub>: λ≠0 (significant spatial pattern) <br><br>
                 Moran's I value ranges from -1 to 1. If the value approaches 1, it indicates a positive spatial pattern, and if it approaches -1, it indicates a negative spatial pattern. A high positive value suggests similarity in values in neighboring areas, while a high negative value indicates a tendency for differing values in neighboring areas. A value approaching 0 indicates no significant spatial pattern.
             </div>
         </div>
