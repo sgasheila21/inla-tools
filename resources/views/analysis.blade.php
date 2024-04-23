@@ -58,12 +58,12 @@
 
         <div class="container-fluid fw-bold text-white p-2 my-2" style="background-color: #BBCF33; border-radius: 10px;">Moran's I</div>
         <div class="container">
-            <div><b>Moran's I Value: </b>{{ session('morans') }}</div>
+            <div><b>Moran's I P-Value: </b>{{ session('morans') }}</div>
             <div class="mt-1">
                 <b>Note:</b><br>
                 H<sub>0</sub>: λ=0 (no significant spatial pattern) <br>
                 H<sub>1</sub>: λ≠0 (significant spatial pattern) <br><br>
-                Moran's I value ranges from -1 to 1. If the value approaches 1, it indicates a positive spatial pattern, and if it approaches -1, it indicates a negative spatial pattern. A high positive value suggests similarity in values in neighboring areas, while a high negative value indicates a tendency for differing values in neighboring areas. A value approaching 0 indicates no significant spatial pattern.
+                Reject H<sub>0</sub>, if the p-value is smaller than alpha.
             </div>
         </div>
 
