@@ -85,11 +85,19 @@
                             });
                         },
                         error: function(xhr) {
-                            Swal.fire(
-                                'Error!',
-                                'Failed to delete variable.',
-                                'error'
-                            );
+                            if (xhr.status === 500) {
+                                Swal.fire(
+                                    'Error!',
+                                    xhr.responseJSON.failure,
+                                    'error'
+                                );
+                            } else {
+                                Swal.fire(
+                                    'Error!',
+                                    'Failed to delete variable.',
+                                    'error'
+                                );
+                            }
                         }
                     });
                 }

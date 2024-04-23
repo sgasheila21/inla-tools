@@ -27,7 +27,7 @@
                     @foreach($variable_ids as $variable_id => $value)
                         <th>{{ $variables[$variable_id-1]->label }} 
                             @if($variables[$variable_id-1]->hint)
-                                <i class="fas fa-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ $variables[$variable_id-1]->label }}"></i>
+                                <i class="fas fa-info-circle" data-bs-toggle="tooltip" data-bs-placement="top" title="{{ $variables[$variable_id-1]->hint }}"></i>
                             @endif
                         </th>
                     @endforeach
