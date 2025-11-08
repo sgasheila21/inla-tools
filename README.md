@@ -1,5 +1,5 @@
-**Spatial Analysis Application in Nusa Tenggara Timur Province using the Second-Order Besag-York-Mollié (BYM2) Model with Integrated Nested Laplace Approximations (INLA).**
-https://binus.ac.id/gallery/artist/1274/sheila-gracia-angelina/
+**Spatial Analysis Application in Nusa Tenggara Timur Province using the Second-Order Besag-York-Mollié (BYM2) Model with Integrated Nested Laplace Approximations (INLA).**  
+  https://binus.ac.id/gallery/artist/1274/sheila-gracia-angelina/
 
 ## Installation
 1. Create the '.env' file  
